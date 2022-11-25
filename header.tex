@@ -1,0 +1,77 @@
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+% PDF metadata
+\usepackage[pdftex]{hyperref}
+% For SI units
+\usepackage{siunitx}
+\sisetup{quotient-mode = fraction}
+% For figure alignment
+\usepackage{float}
+% Better caption support
+\usepackage{caption}
+% For circuit diagrams
+\usepackage[american, EFvoltages, siunitx]{circuitikz}
+\ctikzset{/tikz/circuitikz/bipoles/length = 1cm}
+\ctikzset{nodes width = 0.1}
+\ctikzset{current arrow scale = 9}
+\ctikzset{power supplies/scale = 2}
+\ctikzset{grounds/scale = 2}
+\ctikzset{sources/scale = 1.5}
+\ctikzset{batteries/scale = 1.5}
+\ctikzset{csources/scale = 1.5}
+\ctikzset{bipoles/crossing/size = 1}
+\ctikzset{bipoles/cuteswitch/thickness = 0.25}
+\ctikzset{switches/scale = 1.5}
+\ctikzset{transistors/scale = 1.5}
+\ctikzset{tripoles/mos style=arrows}
+\ctikzset{tripoles/pmos style/nocircle}
+% Other diagrams
+\usepackage{tikz}
+\usetikzlibrary{patterns.meta}
+% For phasor notation
+\usepackage{steinmetz}
+% For subfigures
+\usepackage{subcaption}
+% For boxed
+\usepackage{mdframed}
+
+
+% Misc settings
+% Uniform bullet point appearance
+\renewcommand\labelitemi{\textbullet}
+\renewcommand\labelitemii{\textbullet}
+\renewcommand\labelitemiii{\textbullet}
+% Remove indentation
+\setlength{\parindent}{0in}
+
+
+% Macros
+% Title format
+\newcommand{\customtitle}[5]{
+	\begin{center}
+		{\Huge #5}
+		\vskip 8pt
+		{\large Week #1 #2 #3}
+		\vskip 4pt
+		{\large #4}
+	\end{center}
+}
+% Emphasize vocab terms
+\newcommand{\vocab}[1]{\textbf{#1}}
+% Table header formatting
+\newcommand{\tablehead}[1]{\textbf{#1}}
+% Simplify use of fractions in crowded formulas
+\newcommand{\pfrac}[2]{\left(\dfrac{#1}{#2}\right)}
+\newcommand{\npfrac}[2]{\left(-\dfrac{#1}{#2}\right)}
+% Mark placeholder fields
+\newcommand{\todo}[1]{{\color{red}#1}}
+% Warning for tricky material
+\newcommand{\warn}{{\color{red}Remember!}\ }
+% Emphasis for good tips
+\newcommand{\note}{{\color{blue}Note:}\ }
+% Placeholder for book notes
+\newcommand{\skipsubsection}[1]{\addtocounter{subsection}{1}}
