@@ -33,7 +33,7 @@ check:
 
 # Generate a new notes document from the template #
 new:
-	NEW_FILENAME="$(PREFIX)$$(date --iso-8601).tex" && \
+	NEW_FILENAME="$(PREFIX)$$(date -I).tex" && \
 	cp -n template.tex $$NEW_FILENAME && \
 	sed -i -e "s/\\\todo{DATE}/$$(date '+%B %-d, %Y')/g" $$NEW_FILENAME && \
 	sed -i -e "s/\\\todo{DAY}/$$(date '+%A')/g" $$NEW_FILENAME
