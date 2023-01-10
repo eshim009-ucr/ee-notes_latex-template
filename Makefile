@@ -8,11 +8,11 @@ SRC=$(wildcard $(PREFIX)*.tex)
 PDF=$(subst .tex,.pdf,$(SRC))
 
 # pdflatex build logs #
-LOG=$(subst .tex,.log,$(PDF))
+LOG=$(subst .pdf,.log,$(PDF))
 
 # pdflatex temp files #
-AUX=$(subst .tex,.aux,$(PDF))
-OUT=$(subst .tex,.out,$(PDF))
+AUX=$(subst .pdf,.aux,$(PDF))
+OUT=$(subst .pdf,.out,$(PDF))
 
 # Spellcheck backup files #
 BAK=$(wildcard *.tex.bak)
