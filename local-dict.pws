@@ -4,6 +4,10 @@ circuitikz
 csources
 cuteswitch
 nocircle
+pdfauthor
+pdfkeywords
+pdfsubject
+pdftitle
 pmos
 rgb
 tikz
