@@ -14,56 +14,66 @@ Features
 Dependencies
 ------------
 
-### `siunitx`
+### Linux Packages
+
+```shell
+# Ubuntu
+sudo apt update
+sudo apt install texlive-latex-base texlive-latex-recommended texlive-latex-extra texlive-science texlive-pictures
+```
+
+### LaTeX Packages
+
+#### `siunitx`
 
 For SI unit formatting
 
  - [CTAN](https://www.ctan.org/pkg/siunitx)
  - [Documentation](http://mirrors.ctan.org/macros/latex/contrib/siunitx/siunitx.pdf)
 
-### `circuitikz`
+#### `circuitikz`
 
 For circuit diagrams. This also includes `tikz` for more general diagrams.
 
  - [CTAN](https://www.ctan.org/pkg/circuitikz)
  - [Documentation](https://texdoc.org/serve/circuitikz/0)
 
-### `hyperref`
+#### `hyperref`
 
 For PDF metadata and hyperlinks.
 
  - [CTAN](https://www.ctan.org/pkg/hyperref)
  - [Documentation](http://mirrors.ctan.org/macros/latex/contrib/hyperref/doc/hyperref-doc.pdf)
 
-### `float`
+#### `float`
 
 For figure placement.
 
  - [CTAN](https://www.ctan.org/pkg/float)
  - [Documentation](http://mirrors.ctan.org/macros/latex/contrib/float/float.pdf)
 
-### `caption`
+#### `caption`
 
 For more complete caption support.
 
  - [CTAN](https://www.ctan.org/pkg/caption)
  - [Documentation](http://mirrors.ctan.org/macros/latex/contrib/caption/caption.pdf)
 
-### `steinmetz`
+#### `steinmetz`
 
 For phasor notation.
 
  - [CTAN](https://www.ctan.org/pkg/steinmetz)
  - [Documentation](https://mirrors.ctan.org/macros/latex/contrib/steinmetz/README)
 
-### `subcaption`
+#### `subcaption`
 
 For subfigure support.
 
  - [CTAN](https://www.ctan.org/pkg/subcaption)
  - [Documentation](https://mirror.math.princeton.edu/pub/CTAN/macros/latex/contrib/caption/subcaption.pdf)
 
-### `mdframed`
+#### `mdframed`
 
 For theorem boxes and the like.
 
