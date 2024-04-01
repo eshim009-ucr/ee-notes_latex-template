@@ -2,6 +2,7 @@
 # LaTeX source files #
 # The prefix is used to separate node documents from templates and subdocuments
 PREFIX=ee_notes_
+WEEK_START=1
 SRC=$(wildcard $(PREFIX)*.tex)
 
 # Output PDF files #
@@ -36,7 +37,8 @@ new:
 	NEW_FILENAME="$(PREFIX)$$(date -I).tex" && \
 	cp -n template.tex $$NEW_FILENAME && \
 	sed -i -e "s/\\\todo{DATE}/$$(date '+%B %-d, %Y')/g" $$NEW_FILENAME && \
-	sed -i -e "s/\\\todo{DAY}/$$(date '+%A')/g" $$NEW_FILENAME
+	sed -i -e "s/\\\todo{DAY}/$$(date '+%A')/g" $$NEW_FILENAME && \
+	sed -i -e "s/\\\todo{WEEK NUM}/$$(( $$(date '+%-V') - $(WEEK_START) ))/g" $$NEW_FILENAME
 
 # Remove all output files #
 clean: clean-tmp
